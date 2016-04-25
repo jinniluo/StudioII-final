@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color of Cities</title>
+    <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="./lib/crossfilter/crossfilter.js"></script>
+    <!--<script src="./dataScripts/flickr-node/color-thief.js"></script>-->
+
+    <!--<script src="./lib/flickr.js" charset="utf8"></script>-->
+    <script src="color.js"></script>
+</head>
+<body>
+
+    <div class="head">
+
+
+
+        <!--<div class="description">-->
+            <!--<h2>Explore the colors of-->
+                <!--<br><strong>Newyork City</strong> and <strong>Beijing</strong>-->
+                <!--<br>on your mouse </h2>-->
+        <!--</div>-->
+
+
+
+            <!--<div class="location">User's Location: <span id="location"></span></div>-->
+    </div>
+
+
+    <div class="custom-tooltip">
+
+        <div class="description">
+            <h2>Explore the colors of
+                <strong><span id="location"></span></strong> in <strong><span id="season"></span></strong>
+                on your mouse </h2>
+        </div>
+
+        <div class="image">Photo: <div id="Image"></div></div>
+
+        <div class="title">Title: <span id="title"></span></div>
+
+        <div class="time">Time of Taken: <div id="time"></div></div>
+
+        <div class="r">R:  <span id="r"></span></div>
+        <div class="g">G:  <span id="g"></span></div>
+        <div class="b">B:  <span id="b"></span></div>
+    </div>
+
+
+    <div class="plot">
+        <!--<h1>-->
+            <!--What is the color of your city?-->
+        <!--</h1>-->
+
+
+            <div class="container">
+
+                <!--<div class="controls btn-group">-->
+                    <!--<a href="#" class="btn btn-default" id="image">Images</a>-->
+                    <!--<a href="#" class="btn btn-default" id="squares">Colors</a>-->
+                <!--</div>-->
+
+
+
+                <div class="newyork" id="Newyork-Spring"></div>
+                <div class="newyork" id="Newyork-Summer"></div>
+                <div class="newyork" id="Newyork-Fall"></div>
+                <div class="newyork" id="Newyork-Winter"></div>
+
+                <div class="beijing" id="Beijing-Spring"></div>
+                <div class="beijing" id="Beijing-Summer"></div>
+                <div class="beijing" id="Beijing-Fall"></div>
+                <div class="beijing" id="Beijing-Winter"></div>
+
+            </div>
+    </div>
+</body>
+</html>
